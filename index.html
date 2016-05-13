@@ -1,25 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta http-equiv='X-UA-Compatible' content='IE=edge' />
-<title>workingSAP.com</title>
-
-<script id='sap-ui-bootstrap'
-    src='https://openui5.hana.ondemand.com/resources/sap-ui-core.js'
-    data-sap-ui-theme='sap_bluecrystal'
-    data-sap-ui-libs='sap.m'
-    data-sap-ui-compatVersion='edge'
-    data-sap-ui-preload='async'>
-</script>
-
-<script>
-     sap.ui.getCore().attachInit(function () {
-         jQuery("#content").html("workingSAP.com");
-     });
-</script>
-
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>workingSAP.com</title>
+    <link href="sticky.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="app.css">
 </head>
-<body class='sapUiBody'>
-    <div align='center' id='content'></div>
+<body>
+
+	<div class="wrapper">
+		<div class="heading-box">
+			<h1>workingSAP</h1>
+		</div>
+		<div class="typewriter-box">
+			<p>
+				We Are <span data-twreplace-charspeed="75" data-twreplace-wordspeed="3000" data-twreplace='["Services", "Autonomous", "Programmable"]'>workingSAP</span>.
+			</p>
+		</div>
+	</div>
+
+	<script src="twreplace.min.js"></script>
+	<script type="text/javascript">
+	  WebFontConfig = {
+	    google: { families: [ 'Fira+Mono::latin' ] }
+	  };
+	  (function() {
+	    var wf = document.createElement('script');
+	    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+	      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	  })(); </script>
 </body>
 </html>
